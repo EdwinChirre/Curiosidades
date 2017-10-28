@@ -1,0 +1,17 @@
+################################################
+# COMO GEOCODIFICAR
+################################################
+
+#install.packages("googleway")
+library(googleway)
+
+#crear tu API de google maps
+#https://developers.google.com/maps/documentation/geocoding/get-api-key?hl=es-419
+
+
+#colocar en key = "tuclavegeneradoporgoogle"
+geocode <- google_geocode(address = "Av. Alfredo Benavides 2818, Miraflores,lima,Peru", key = "clave_api")
+
+geocode$results$geometry$location
+
+#referencia: http://demos.symbolix.com.au/GooglewayRMeetupPresentation.html#/12
