@@ -13,5 +13,7 @@ library(googleway)
 geocode <- google_geocode(address = "Av. Alfredo Benavides 2818, Miraflores,lima,Peru", key = "clave_api")
 
 geocode$results$geometry$location
+#        lat       lng
+#1 -12.12848 -77.00497
 
 #referencia: http://demos.symbolix.com.au/GooglewayRMeetupPresentation.html#/12
